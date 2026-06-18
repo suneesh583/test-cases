@@ -1,0 +1,20 @@
+PROJECT NAME,,,,,,,,
+MODULE NAME,,,,,,,,
+REVIEWED BY,,,,,,,,
+REVIEWED DATE,,,,,,,,
+CREATED BY,,,,,,,,
+CREATED DATE,,,,,,,,
+,,,,,,,,
+TEST_ID,FEATURE,TEST SCENARIO,PRE CONDITION,TEST STEPS,TEST DATA,EXPECTED RESULT,ACTUL RESULT,STATUS
+coupen-1,coupen code,verify if valid coupen lowers the price,user should be in the checkout page with cart total of 1000$,"1  click on the promo code input feild
+2 enter valid code""save10""
+3  click submit button","coupen code:""save10""","should show ""coupen applied succesfully""message and reduce the toal to 900$",as expected,pass
+coupen-2,coupen code,verify if invalid coupen do not lowers the price,user should be in the checkout page with cart total of 1000$,"1  click on the promo code input feild
+2 enter invalid code""fake10""
+3  click submit button","coupen code:""fake10""","should show ""coupon did not apply, enter valid coupencode""message and diplay the same amount 1000$",as expected,pass
+coupen-3,coupen code,verify if valid coupen lowers the price for cart total less than 1000$,user should be in the checkout page with cart total of 900$,"1  click on the promo code input feild
+2 enter invalid code""fake10""
+3  click submit button","coupen code:""fake10""","should show ""invalid coupon ,cart  should be 1000$and above""message and diplay the same amount 900$",as expected,pass
+coupen-4,coupen code,verify if expired coupen lowers the price ,user should be in the checkout page with cart total of 1000$,"1  click on the promo code input feild
+2 enter invalid code""expired10""
+3  click submit button","coupen code:""fexpired10""","should show ""expired coupon code""message and diplay the same amount ",as expected,pass

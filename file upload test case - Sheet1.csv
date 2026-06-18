@@ -1,0 +1,45 @@
+project name,abc,,,,,,
+module name,file upload,,,,,,
+reviewed by,abc,,,,,,
+reviewed date,2/4/4995,,,,,,
+created by,eirt,,,,,,
+created date,5/6/3004,,,,,,
+,,,,,,,
+,,,,,,,
+test case ID,test scenario,precondition,test steps,test data,expected result,actual result,status
+tc-001,verify file uploads with jpg format,user should in file uploding field,"1 click file uploading field
+2 click on internal files
+3 slect jpg file
+4 click upload
+",jpg file,"should show ""file uploaded""
+message",as expected,pass
+tc-002,verify file uploads with png format,user should in file uploding field,"1 click file uploading field
+2 click on internal files
+3 slect png file
+4 click upload
+",png  file,"should show ""file uploaded""
+message",as expected,pass
+tc-003,verify file uploads fails with pdf format,user should in file uploding field,"1 click file uploading field
+2 click on internal files
+3 slect pdf  file
+4 click upload
+",pdf  file,"should show ""invalid file format""
+message",as expected,pass
+tc-004,verify file uploads fails with docx format,user should in file uploding field,"1 click file uploading field
+2 click on internal files
+3 slect docx  file
+4 click upload
+",docx  file,"should show ""invalid file format""
+message",as expected,pass
+tc-005,verify file uploads if size is less than 5 mb,user should in file uploding field,"1 click file uploading field
+2 click on internal files
+3 slect jpg fie less than 5 mb
+4 click upload
+",jpg file less than 5 mb,"should show ""file uploaded""
+message",as expected,pass
+tc-006,verify file upload fails if size is more than 5 mb,user should in file uploding field,"1 click file uploading field
+2 click on internal files
+3 slect jpg file that is  than 5 mb
+4 click upload
+",jpg file more than 5 mb,"should show ""invalid file size""
+message",as expected,pass

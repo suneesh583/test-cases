@@ -1,0 +1,33 @@
+Project name,website,,,,,,,,
+module name,login,,,,,,,,
+reviewed by,abc,,,,,,,,
+reviewed date,13/3/2004,,,,,,,,
+executed by,xyz,,,,,,,,
+executed date,394905,,,,,,,,
+,,,,,,,,,
+Sl no,test case ID,test scenario,description,pre condition,test steps,test data,expected result,actual result,status
+1,tc_001,verify login with valid credential,verify with valid username and password,user must be registerd," 1 open the website
+ 2 enter valid username
+ 3 enter valid password
+4 click submit button","usename:student
+password:Password123", should login and take to home page,as expected,pass
+2,tc_002,verify rejection with invalid credential's ,verify the rejection with invalid username and invalid passwords ,user must be registerd," 1 open the website
+ 2 enter invalid username
+ 3 enter invalid password
+4 click submit button","usename:studentss
+password:Password1","should show the ""invalid username and password""message",as expected,pass
+3,tc_003,verify rejection with invalid credential's ,verify the rejection with valid username and invalid passwords ,user must be registerd," 1 open the website
+ 2 enter valid username
+ 3 enter invalid password
+4 click submit button","usename:student
+password:Password1","should show the ""invalid username and password""message",as expected,pass
+4,tc_004,verify rejection with invalid credential's ,verify the rejection with invalid username and  valid passwords ,user must be registerd," 1 open the website
+ 2 enter invalid username
+ 3 enter valid password
+4 click submit button","usename:student123
+password:Password123","should show the ""invalid username and password""message",as expected,pass
+5,tc_005,verify rejection with invalid credential's ,verify the rejection with empty username and password field,user must be registerd," 1 open the website
+ 2 leave username blank
+ 3 leave password blank
+4 click submit button","usename:
+password:","should show the ""invalid username and password""message",as expected,pass
